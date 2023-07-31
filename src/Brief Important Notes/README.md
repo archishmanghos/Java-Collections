@@ -40,3 +40,13 @@ Video. The codes have been written by mine but the screenshots have been taken f
 > Ordering Implemented by Class: Natural Ordering (Comparable)
 >
 > Ordering Implemented by Comparator: Total Ordering
+
+<h4>HashSet vs LinkedHashSet</h4>
+> HashSet stores elements in random order.
+>
+> LinkedHashSet stores elements in the order they were inserted.
+
+> HashSet has better performance than LinkedHashSet as it doesn't have to store elements in order. TC ~ almost constant
+> O(1).
+>
+> LinkedHashSet has slightly worse performance than HashSet due to it's ordering.

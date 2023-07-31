@@ -1,5 +1,7 @@
 package archishman;
 
+import java.util.Objects;
+
 public class StudentMarks implements Comparable<StudentMarks> {
     private int mathematics, physics;
 
@@ -30,5 +32,18 @@ public class StudentMarks implements Comparable<StudentMarks> {
         // same as above but shorter
         // return this.mathematics - o.mathematics; -> ascending
         return o.mathematics - this.mathematics; // -> descending
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StudentMarks that = (StudentMarks) o;
+        return mathematics == that.mathematics && physics == that.physics;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(mathematics, physics);
     }
 }

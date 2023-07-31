@@ -1,3 +1,5 @@
+package QueuesAndStacks;
+
 import archishman.StudentMarks;
 
 import java.util.ArrayList;
