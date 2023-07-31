@@ -35,3 +35,8 @@ Video. The codes have been written by mine but the screenshots have been taken f
 > When implementing Queue, use LinkedList<>.
 >
 > When implementing Deque, use ArrayDeque<>.
+
+<h4>Comparable Interface and Comparator Interface</h4>
+> Ordering Implemented by Class: Natural Ordering (Comparable)
+>
+> Ordering Implemented by Comparator: Total Ordering
