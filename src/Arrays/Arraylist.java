@@ -1,7 +1,6 @@
 package Arrays;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Arraylist {
     public static void main(String[] args) {
@@ -43,5 +42,16 @@ public class Arraylist {
         Integer[] arr = list3.toArray(new Integer[0]);
         for (int i : arr) System.out.print(i + ", ");
         System.out.println();
+
+        // Sort the array
+        Collections.sort(list3);
+        System.out.println(list3);
+        Collections.sort(list3, Collections.reverseOrder());
+        System.out.println(list3);
+
+
+        // Array to ArrayList
+        List<Integer> list4 = Arrays.asList(arr);
+        System.out.println(list4);
     }
 }
